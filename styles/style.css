@@ -7,8 +7,56 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  box-shadow: 0 0 4px rgb(71, 70, 70);
+  color: #000;
 }
+
+/*ниже микс для шапки и подвала*/
+.logo {
+  width: 183px;
+}
+
+/*ниже микс для секций digits и kaufman*/
+.section-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  width: 60%;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  width: 60%;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+.table {
+  margin: 0 auto 0;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.table__text {
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+/*выше микс для секций digits и kaufman*/
+
 
 .header {
   height: 100vh;
@@ -20,11 +68,6 @@
   background-color:  #f2f2f2;
   align-items: center;
   padding-left: 64px;
-  box-shadow: 0 0 4px rgb(71, 70, 70);
-}
-
-.logo {
-  width: 183px;
 }
 
 .logo_place_header {
@@ -54,12 +97,12 @@
   z-index: 2;
 }
 
-.link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
 }
 
-.main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -68,7 +111,7 @@
   z-index: 1;
 }
 
-.square-pic {
+.header__square-pic {
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
@@ -79,8 +122,7 @@
 
 
 .description {
-  box-shadow: 0 0 4px rgb(71, 70, 70);
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .two-columns {
@@ -91,7 +133,7 @@
   margin: auto;
 }
 
-.two-columns_brief {
+.two-columns__brief {
   color: #2f80ed;
   width: 175px;
   margin: 0;
@@ -100,7 +142,7 @@
   font-weight: normal;
 }
 
-.two-colums_main-text {
+.two-colums__main-text {
   width: 80%;
   min-width: 784px;
 }
@@ -124,35 +166,16 @@
 
 
 .digits {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 4px rgb(71, 70, 70);
-}
-
-.section-title {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  width: 60%;
-  margin: 100px auto 20px;
-  text-align: center;
+  padding: 100px 0;
 }
 
 .section-subtitle {
   font-size: 24px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 34px;
   width: 60%;
   margin: 0 auto 0;
   text-align: center;
-}
-
-.table {
-  margin: 0 auto 100px;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .table__cell {
@@ -160,39 +183,57 @@
   width: 250px;
 }
 
-.table__heading {
-  margin: 0;
-  font-size: 24px;
+
+.feynman {
+  display: flex;
+  flex-direction: column;
+  height: 790px;
+  background-color: #f2f2f2;;
+  background-image: url(../images/feynman.png);
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-top: 100px;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
+  margin: 0 auto 70px;
+  text-align: center;
 }
 
-.table__text {
-  margin: 20px 0 0;
-  font-size: 18px;
+.feynman__subtitle {
+  font-size: 36px;
   font-weight: normal;
-  line-height: 1.2;
+  line-height: 51px;
+  margin: 0 auto 0;
+
 }
 
+.feynman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
 
 
 .kaufman {
-  box-shadow: 0 0 4px rgb(71, 70, 70);
   background-color: #1f1f1f;
   color:white;
   position: relative;
   overflow: hidden;
+  padding: 90px 0;
 }
 
-.section-title_theme_dark {
-  margin: 90px auto 20px;
-}
-
-.table_theme_dark {
-  margin: 0 auto 90px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   margin: 80px 0 0;
@@ -211,20 +252,19 @@
 
 .footer {
   min-height: 350px;
-
   display: flex;
   background-color: #1f1f1f;
   color: white;
 }
 
-.footer_columns {
+.footer__columns {
   width: 90%;
   display: flex;
   margin: 60px auto 40px;
   justify-content: space-between;
 }
 
-.footer_columns__column_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -236,24 +276,26 @@
   height: 35px;
 }
 
-.footer_columns__author {
+.footer__author {
   margin: 18px 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
 }
 
-.footer_columns__column_content_info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 }
 
-.column_content_info__column-heading {
+.footer__column-heading {
   margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 600;
 }
 
-.column_content_info__column-links {
+.footer__column-links {
   margin: 0 0 16px 0;
   display: flex;
   flex-direction: column;
@@ -261,7 +303,7 @@
   padding: 0;
 }
 
-.column_content_info__column-links_link {
+.footer__column-link {
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
@@ -270,31 +312,26 @@
   list-style: none;
 }
 
-.footer_columns__column_content_social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 }
 
-.column_content_social__list {
-  margin: 0 0 20px 0;
+.footer__social-link {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 30px;
-}
-
-.column_content_social__social-icon {
-  display: flex;
-  margin: 0;
-}
-
-.social-icon_social {
-  color: white;
   text-decoration: none;
-  margin: 0 0 16px 10px;
+  color: white;
+  list-style: none;
+  padding-left: 10px;
 }
 
-.social-icon_icon {
+.footer__social-link:nth-of-type(3n) {
+  margin-bottom: 16px;
+}
+
+.footer__social-icon {
   width: 16px;
   height: 16px;
 }
-
