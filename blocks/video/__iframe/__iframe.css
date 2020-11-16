@@ -1,0 +1,7 @@
+.video__iframe {
+  border: none;
+}
+
+.video__iframe:nth-of-type(2n) {
+  padding-left: 20px;
+}
