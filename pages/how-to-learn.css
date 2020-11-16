@@ -10,6 +10,11 @@
 @import url(../blocks/description/description.css);
 
 @import url(../blocks/techniques/techniques.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/__item.css);
+@import url(../blocks/cards/__image/__image.css);
+@import url(../blocks/cards/__title/__title.css);
+@import url(../blocks/cards/__description/__description.css);
 
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframes/__iframes.css);
@@ -17,12 +22,12 @@
 
 @import url(../blocks/oakley/oakley.css);
 
-@import url(../blocks/digits/digits.css);
-
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__title/__title.css);
 @import url(../blocks/feynman/__subtitle/__subtitle.css);
 @import url(../blocks/feynman/__link/__link.css);
+
+@import url(../blocks/digits/digits.css);
 
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__container/__container.css);
@@ -38,28 +43,20 @@
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/__triangle.css);
 
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__columns/__columns.css);
-@import url(../blocks/footer/__column/__column.css);
-@import url(../blocks/footer/__column/_content/_copyright.css);
-
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/resources/__logo-zone/__logo-zone.css);
 @import url(../blocks/resources/__logo/__logo.css);
 
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__columns/__columns.css);
+@import url(../blocks/footer/__column/__column.css);
+@import url(../blocks/footer/__column/_content/_copyright.css);
 @import url(../blocks/footer/__author/__author.css);
 @import url(../blocks/footer/__column-heading/__column-heading.css);
 @import url(../blocks/footer/__column-link/__column-link.css);
 @import url(../blocks/footer/__column-links/__column-links.css);
 @import url(../blocks/footer/__social-icon/__social-icon.css);
 
-
-
-@import url(../blocks/cards/cards.css);
-@import url(../blocks/cards/__item/__item.css);
-@import url(../blocks/cards/__image/__image.css);
-@import url(../blocks/cards/__title/__title.css);
-@import url(../blocks/cards/__description/__description.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/_footer.css);
@@ -84,4 +81,3 @@
 @import url(../blocks/two-columns/__span-accent/__span-accent.css);
 
 @import url(../blocks/rotation/rotation.css);
-
