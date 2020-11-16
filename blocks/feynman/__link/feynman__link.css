@@ -10,6 +10,7 @@
 }
 
 .feynman__link:hover {
-  color: #0854b8;
-}
+    opacity: .5;
+    transition: opacity linear 0.3s;
+  }
 
